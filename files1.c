@@ -11,7 +11,7 @@ int main()
 	fp = fopen(file_name1,"r");
 	if(fp == NULL)
 	{
-		printf("cannot open the file %s.txt\n",file_name1);
+		printf("cannot open the file %s\n",file_name1);
 		exit(1);
 	}
 	printf("write file name which we have to copy contents from before file\n");
@@ -19,7 +19,7 @@ int main()
 	fptr = fopen(file_name2,"w");
 	if(fptr == NULL)
 	{
-		printf("cannot open the file %s.txt\n",file_name2);
+		printf("cannot open the file %s\n",file_name2);
 		exit(1);
 	}
 	s[i] = fgetc(fp);
